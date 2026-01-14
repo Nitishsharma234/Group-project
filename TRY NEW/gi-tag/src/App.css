@@ -1,0 +1,118 @@
+/* Professional GI Tag Front Page CSS */
+
+:root {
+  --primary-orange: #f97316;
+  --primary-green: #15803d;
+  --primary-blue: #2563eb;
+  --dark-gray: #1f2937;
+  --light-gray: #6b7280;
+  --bg-gradient: linear-gradient(135deg, #fff7ed, #ffffff, #ecfdf5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg-gradient);
+  color: var(--dark-gray);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: var(--light-gray);
+  max-width: 600px;
+}
+
+.card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 720px;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 28px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.btn {
+  padding: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-orange {
+  background: var(--primary-orange);
+}
+
+.btn-green {
+  background: var(--primary-green);
+}
+
+.btn-blue {
+  background: var(--primary-blue);
+}
+
+.btn-dark {
+  background: var(--dark-gray);
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: var(--light-gray);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    padding: 24px;
+  }
+}

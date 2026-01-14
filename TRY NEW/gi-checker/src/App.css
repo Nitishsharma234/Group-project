@@ -1,0 +1,42 @@
+body {
+  background: #f4f6fa;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 500px;
+  margin: 60px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #1f3c88;
+}
+
+input {
+  margin: 15px 0;
+}
+
+button {
+  background: #1f3c88;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #162b63;
+}
+
+.result {
+  margin-top: 20px;
+  background: #eef2ff;
+  padding: 15px;
+  border-radius: 6px;
+}
